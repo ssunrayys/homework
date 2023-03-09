@@ -1,1 +1,1 @@
-Homeworks from course "Frontend Pro" :computer:
+Homeworks from the course "Frontend Pro" :computer:
