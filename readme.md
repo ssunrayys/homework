@@ -1,6 +1,6 @@
 **Task# 1**
 
-Что вернут следующие строки кода?
+What will the following lines of code return?
 
 1. Boolean(Number(’10’)) + 1;
 2. ‘sub ’ + Number(false);
@@ -11,17 +11,17 @@
 
 **Task# 2**
 
-* Напишите скрипт, который считает количество секунд в часе.
-* Запросить у пользователя количество часов
-* Посчитать сколько секунд в этом количестве часов
-* Записать вычесленное значение в переменную
-* Вывести эту переменную пользователю во всплывающем окне
+* Write a script that counts the number of seconds in an hour.
+* Ask the user for the number of hours
+* Calculate how many seconds are in this number of hours
+* Write the computed value to a variable
+* Display this variable to the user in a popup window
 
 
 **Task #3**
 
-Переделайте приведенный код так, чтобы в нем использовались операции +=, -=, *=, /=, ++, —. 
-Количество строк кода при этом не должно измениться. Код для переделки:
+Modify the above code to use the +=, -=, *=, /=, ++, — operators.
+The number of lines of code should not change. Code for rework:
 
 let num = 1;
 num = num + 12;
