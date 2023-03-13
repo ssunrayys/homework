@@ -1,1 +1,0 @@
-Homeworks from the course "Frontend Pro" :computer:
