@@ -38,7 +38,7 @@ if (typeof year === 'number' && !Number.isNaN(year)) {
 			alert(message);
 		}
 	}
-}
+};
 
 
 
