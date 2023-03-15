@@ -1,15 +1,13 @@
 'use strict';
 
-const year = +prompt('Write your birthday year');
-if (typeof year === 'number' && !Number.isNaN(year)) {
+let year = prompt('Write your birthday year');
+if (year !== null && typeof +year === 'number' && !Number.isNaN(+year)) {
 	const city = prompt('Write your city')
 	if (city !== null) {
 		const sport = prompt('Write your favourite sport')
-		if (sport === null) {
-			alert("Try again");
-		} else {
+		if (sport !== null) {
 			let currentYear = new Date().getFullYear();
-			let age = currentYear - birthYear;
+			let age = currentYear - year;
 			let cityMessage;
 			switch (city) {
 				case "Odessa":
@@ -34,11 +32,20 @@ if (typeof year === 'number' && !Number.isNaN(year)) {
 				default:
 					sportMessage = `Do you want to be champion in ${sport}?`;
 			}
-			let message = `You are ${age} year. ${cityMessage}, ${sportMessage}`;
+			const message = `You are ${age} year. ${cityMessage}, ${sportMessage}`;
 			alert(message);
 		}
+		else {
+			alert(`Жаль, что Вы не захотели ввести свой любимый вид спорта`)
+		}
 	}
-};
+	else {
+		alert(`Жаль, что Вы не захотели ввести свой город`)
+	}
+}
+else {
+	alert(`Жаль, что Вы не захотели ввести свой возраст`)
+}
 
 
 
