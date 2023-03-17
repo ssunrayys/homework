@@ -2,19 +2,15 @@
 
 // 1.
 
-// так не использовать тернарий:
-// x > y ? console.log('x больше, чем y') : console.log('x не больше, чем y');
-
-const x = 10, y = 7;
-console.log(`x ${x > y ? '' : 'не '}больше, чем y`);
+x > y ? console.log('x больше, чем y') : console.log('x не больше, чем y');
 
 // 2.
 
-// if (num % 2) {
-// 	console.log(`Число ${num} нечетное`)
-// } else {
-// 	console.log(`Число ${num} четное`)
-// }
+if (num % 2) {
+	console.log(`Число ${num} нечетное`)
+} else {
+	console.log(`Число ${num} четное`)
+}
 
 const num = +prompt('Write a number');
 console.log(`Число ${num} ${num % 2 ? 'не' : ''}четное`)
@@ -22,10 +18,24 @@ console.log(`Число ${num} ${num % 2 ? 'не' : ''}четное`)
 // 3.
 
 const int = prompt('Write an integer');
-const length = int.length - (+int < 0);
-const digits = length === 1 ? 'одно' : length === 2 ? 'двух' : 'трех';
-const sign = +int < 0 ? 'отрица' : 'положи';
-alert(`Число ${int} ${digits}значное ${sign}тельное`)
+console.log(int.length);
+
+let digits = null;
+switch (int.length) {
+	case 1:
+		digits = 'однозначное'
+		break;
+	case 2:
+		digits = 'двухзначное'
+		break;
+	case 3:
+		digits = 'трехзначное'
+		break;
+	default:
+		digits = 'многозначное'
+}
+const sign = +int < 0 ? 'отрицательное' : 'положительное';
+alert(`Число ${int} ${digits} ${sign}`);
 
 // 4.
 
