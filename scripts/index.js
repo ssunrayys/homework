@@ -5,6 +5,7 @@
 x > y ? console.log('x больше, чем y') : console.log('x не больше, чем y');
 
 // 2.
+const num = +prompt('Write a number');
 
 if (num % 2) {
 	console.log(`Число ${num} нечетное`)
@@ -12,7 +13,6 @@ if (num % 2) {
 	console.log(`Число ${num} четное`)
 }
 
-const num = +prompt('Write a number');
 console.log(`Число ${num} ${num % 2 ? 'не' : ''}четное`)
 
 // 3.
@@ -20,7 +20,7 @@ console.log(`Число ${num} ${num % 2 ? 'не' : ''}четное`)
 const int = prompt('Write an integer');
 console.log(int.length);
 
-let digits = null;
+let digits;
 switch (int.length) {
 	case 1:
 		digits = 'однозначное'
