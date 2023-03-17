@@ -1,1 +1,2 @@
-Homeworks from the course "Frontend Pro" :computer:
+Given the coordinates of the point A(x = 4, y = 9) and the radius of the circle (R = 10) centered at the origin. 
+Using the ternary operator, write code that will display a message about whether the given point lies inside or outside the circle. To take the square root of z, you need the Math.sqrt(z) method.
