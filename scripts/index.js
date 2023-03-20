@@ -1,6 +1,8 @@
 'use strict';
 
 // 1.
+const x = +prompt('Write a number');
+const y = +prompt('Write a number');
 
 x > y ? console.log('x больше, чем y') : console.log('x не больше, чем y');
 
