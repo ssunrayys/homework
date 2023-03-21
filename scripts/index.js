@@ -2,22 +2,23 @@
 
 const word = prompt('Write a word');
 const num = +prompt('Write a number');
-const symbol = +prompt('Write a symbol');
+const symb = prompt('Write a symbol');
 const bool = prompt(`Write 'true' or 'false'`);
 
-function padString(a, b, c, d) {
-	if (a !== String) {
+function padString(word, num, symb, bool) {
+	if (typeof word === null) {
 		return 'Error, write a word'
-		if (Number.isNaN(b)) {
-			return 'Error, write a number'
-			if (Number.isNaN(c)) {
-				return 'Error, write a symbol'
-				if (d !== String) {
-					return 'Error, write \'true\' or \'false\''
-					
-				}
-			}
-		}
+	} if (Number.isNaN(num)) {
+		return 'Error, write a number'
+	} if (typeof symb === null) {
+		return 'Error, write a symbol'
+	} if (bool === 'false') {
+		alert(`${symb}${word}`)
+	} if (bool === 'true') {
+		alert(`${word}${symb}`)
+	} else {
+		return 'Error, write \'true\' or \'false\''
 	}
 }
-alert(padString(word, num, symbol, bool));
+const str = padString(word, num, symb, bool);
+console.log(str.substring(num))
