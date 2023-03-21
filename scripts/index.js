@@ -8,15 +8,20 @@ const bool = prompt(`Write 'true' or 'false'`);
 function padString(word, num, symb, bool) {
 	if (typeof word === null) {
 		return 'Error, write a word'
-	} if (Number.isNaN(num)) {
+	}
+	if (Number.isNaN(num)) {
 		return 'Error, write a number'
-	} if (typeof symb === null) {
+	}
+	if (typeof symb === null) {
 		return 'Error, write a symbol'
-	} if (bool === 'false') {
-		alert(`${symb}${word}`)
-	} if (bool === 'true') {
-		alert(`${word}${symb}`)
-	} else {
+	}
+	if (bool === 'false') {
+		return (`${symb}${word}`)
+	}
+	if (bool === 'true') {
+		return (`${word}${symb}`)
+	}
+	else {
 		return 'Error, write \'true\' or \'false\''
 	}
 }
