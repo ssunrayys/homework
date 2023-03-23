@@ -15,4 +15,5 @@ function getNewArr(arr) {
 	else return 'Array is empty';
 }
 
-console.log(getNewArr(numbers));
+getNewArr(numbers)
+

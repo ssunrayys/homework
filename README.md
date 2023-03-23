@@ -1,4 +1,4 @@
-Given an array with numbers const arr = [1, 2, 3, -1, -2, -3];
+********___Given an array with numbers const arr = [1, 2, 3, -1, -2, -3];
 
 You need to write a function that will return a new array containing only positive numbers. For this:
 
@@ -20,4 +20,4 @@ You need to write a function that will return a new array containing only positi
 
 - If it is not empty, then return this array
 
-- If empty, return null
+- If empty, return null___********
