@@ -21,7 +21,7 @@ const padString = (str, length, symb, right = true) => {
 	const symbols = symb.repeat(length - str.length);
 	return right ? str + symbols : symbols + str
 }
-console.log(padString(word, num, symb, bool))
+padString(word, num, symb, bool)
 
 // console.log(padString('hello', 8, '*') );
 // console.log(padString('hello', 8, '*', false));
