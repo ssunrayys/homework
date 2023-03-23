@@ -12,7 +12,7 @@ function getNewArr(arr) {
 	}
 	
 	if (emptyArr.length !== 0) return emptyArr;
-	else return 'Array is empty';
+	return 'Array is empty';
 	
 }
 
