@@ -8,4 +8,4 @@ function priceOfPotatoes (volume, weight, price) {
 	return weightForDish * price
 }
 
-console.log(priceOfPotatoes(waterVolume, weightOfOnePotato, priceForKg));
+priceOfPotatoes(waterVolume, weightOfOnePotato, priceForKg);
