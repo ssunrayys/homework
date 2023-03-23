@@ -23,7 +23,3 @@ const padString = (str, length, symb, right = true) => {
 }
 padString(word, num, symb, bool)
 
-// console.log(padString('hello', 8, '*') );
-// console.log(padString('hello', 8, '*', false));
-// console.log(padString('hello', 2));
-// console.log(padString('hello', 2));
