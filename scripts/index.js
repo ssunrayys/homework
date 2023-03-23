@@ -1,29 +1,29 @@
 'use strict';
 
-const word = prompt('Write a word');
-const num = +prompt('Write a number');
-const symb = prompt('Write a symbol');
-const bool = prompt(`Write 'true' or 'false'`);
+const word = 'hey'
+const num = 7
+const symb = ')'
+const bool = false
 
-function padString(word, num, symb, bool) {
-	if (typeof word === null) {
-		return 'Error, write a word'
+const padString = (str, length, symb, right = true) => {
+	if(typeof str !== 'string') throw new Error('Write a string');
+	if(typeof length !== 'number' || Number.isNaN(length) || !isFinite(length) ) {
+		throw new Error('Write a number');
 	}
-	if (Number.isNaN(num)) {
-		return 'Error, write a number'
-	}
-	if (typeof symb === null) {
-		return 'Error, write a symbol'
-	}
-	if (bool === 'false') {
-		return (`${symb}${word}`)
-	}
-	if (bool === 'true') {
-		return (`${word}${symb}`)
-	}
-	else {
-		return 'Error, write \'true\' or \'false\''
-	}
+	
+	if(str.length === length) return str;
+	if(str.length > length) return str.substring(0, length);
+	
+	
+	if(typeof symb !== 'string' || symb.length !== 1) throw new Error('Write a string with 1 length');
+	if(typeof right !== 'boolean')  throw new Error('Write a boolean');
+	
+	const symbols = symb.repeat(length - str.length);
+	return right ? str + symbols : symbols + str
 }
-const str = padString(word, num, symb, bool);
-console.log(str.substring(num))
+console.log(padString(word, num, symb, bool))
+
+// console.log(padString('hello', 8, '*') );
+// console.log(padString('hello', 8, '*', false));
+// console.log(padString('hello', 2));
+// console.log(padString('hello', 2));
