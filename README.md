@@ -6,6 +6,6 @@
 
 <br>Examples:
 
-1; // false
-7; // true
+1; // false<br>
+7; // true<br>
 10; // false
