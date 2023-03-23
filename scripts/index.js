@@ -16,5 +16,5 @@ function getNewArr(arr) {
 	
 }
 
-console.log(getNewArr(numbers));
+getNewArr(numbers);
 
