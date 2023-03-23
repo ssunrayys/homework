@@ -8,12 +8,12 @@ function getNewArr(arr) {
 	if (arr.length === 0) return 'Array is empty';
 	
 	for (let i = 0; i < arr.length; i++) {
-		if (i >= 0) return emptyArr.push(arr[i]);
+		if (i >= 0) return emptyArr.push(arr);
 	}
 	
 	if (emptyArr.length !== 0) return emptyArr;
 	else return 'Array is empty';
 }
 
-getNewArr(numbers)
+console.log(getNewArr(numbers));
 
