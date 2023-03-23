@@ -1,46 +1,14 @@
 'use strict';
 
-// from 0 to 25
+// function plural(n,str1,str2,str5){return n + ' ' + ((((n%10)==1)&&((n%100)!=11))?(str1):(((((n%10)>=2)&&((n%10)<=4))&&(((n%100)<10)||((n%100)>=20)))?(str2):(str5)))}
+// alert(plural(23, 'год', 'года', 'лет'));
+//
 
-const number = +prompt('Write a number');
-const firstEnd = 'год';
-const secondEnd = 'года';
-const thirdEnd = 'лет';
-
-if (number !== null && typeof number === 'number') {
-	switch (number) {
-		case 1:
-		case 21:
-			alert(`Вам ${number} ${firstEnd}`);
-		break;
-		case 2:
-		case 3:
-		case 4:
-		case 22:
-		case 23:
-		case 24:
-			alert(`Вам ${number} ${secondEnd}`);
-		break;
-		case 0:
-		case 5:
-		case 6:
-		case 7:
-		case 8:
-		case 9:
-		case 10:
-		case 11:
-		case 12:
-		case 13:
-		case 14:
-		case 15:
-		case 16:
-		case 17:
-		case 18:
-		case 19:
-		case 20:
-		case 25:
-			alert(`Вам ${number} ${thirdEnd}`);
-	}
-} else {
-	alert('You did not write a number');
+function plural(number, titles) {
+	const key = [2, 0, 1, 1, 1, 2];
+	return titles[ (number%100>4 && number%100<20)? 2 : key[(number%10<5)?number%10:5] ];
 }
+
+const endOfYear = ['год', 'года', 'лет'];
+
+console.log('1 ', plural(1, endOfYear));
