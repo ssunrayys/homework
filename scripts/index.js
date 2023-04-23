@@ -27,7 +27,6 @@ function getPalindrome(num, steps = 0){
 		}
 		return true;
 	}
-	
 }
 
-console.log(getPalindrome(85));
+console.log(getPalindrome(59));
