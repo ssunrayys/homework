@@ -7,4 +7,4 @@ function getNumber(firstNumber){
 }
 
 let getSum = getNumber(3);
-console.log(getSum(4));
+getSum(4);
