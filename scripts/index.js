@@ -1,7 +1,7 @@
 'use strict';
 
 function getArray(arr){
-	if (arr !== arr){
+	if (arguments.length > 1){
 		throw new Error ('Function accepts only 1 argument, too much arguments provided')
 	} else if (!Array.isArray(arr)){
 		return arr.slice();
