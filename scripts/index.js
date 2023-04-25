@@ -57,7 +57,18 @@ let users = [
 	}
 ]
 
-const phones = users.filter(item => item.balance > 2000).map(item => item.phone)
+const getreplacedBalance = users.map(user => {
+	
+	const replacedBalance = parseFloat(user.balance. replace(/[^0-9.]/g, ""));
+	
+	return {
+		...user,
+		balance: replacedBalance
+	};
+})
 
-const sumOfBalance = users.reduce((acc, item) => acc + item.balance
+const phones = getreplacedBalance.filter(item => item.balance > 2000).map(item => item.phone)
+
+
+const sumOfBalance = getreplacedBalance.reduce((acc, item) => acc + item.balance
 , 0)
