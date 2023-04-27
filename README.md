@@ -1,1 +1,1 @@
-Homeworks from the course "Frontend Pro" :computer:
+Write your own implementation of the bind function
