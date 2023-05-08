@@ -16,4 +16,4 @@ function generateList(array){
 	return doc;
 }
 
-generateList(arr)
+generateList(arr);
