@@ -1,15 +1,40 @@
 body {
-    background-color: black;
+    font-family: roboto;
+    background: #134E5E;
+    background: linear-gradient(to right, #71B280, #134E5E);
 }
 
-.main_title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 40vh auto;
+.btn-primary {
+    background-color: green;
+    border-color: aliceblue;
 }
 
-h1 {
-    font-size: 55px;
-    color: deeppink;
+.btn-danger {
+    background-color: deeppink;
+    border-color: aliceblue;
 }
+
+.btn-danger:hover {
+    background-color: mediumvioletred;
+    border-color: mediumvioletred;
+}
+
+.taskWrapper {
+    background-color: #71B280;
+    border-radius: 10px;
+    box-shadow: 0 0 14px 1px rgba(0, 0, 0, .2);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.taskHeading {
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.taskDescription {
+    font-size: 16px;
+    text-align: center;
+}
+
