@@ -1,1 +1,1 @@
-Homeworks from the course "Frontend Pro" :computer:
+Function deepfreeze!
